@@ -6,7 +6,7 @@ steps :
   - label: ":gear: Traitement"
     key: process
     depends_on: start
-    commmand: echo "Etape de traitement"
+    command: echo "Etape de traitement"
 
   - label: ":checkered_flag: Final"
     depends_on: process
