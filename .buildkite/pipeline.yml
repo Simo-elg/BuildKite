@@ -1,13 +1,13 @@
-steps :
+steps:
   - label: ":seedling: Démarrage"
     key: start
-    command: "echo 'Etape de démarrage'"
+    command: echo "Étape de démarrage"
 
   - label: ":gear: Traitement"
     key: process
     depends_on: start
-    command: "echo 'Etape de traitement'"
+    command: echo "Étape de traitement"
 
   - label: ":checkered_flag: Final"
     depends_on: process
-    command: "echo 'Étape finale !'"
+    command: echo "Étape finale !"
