@@ -1,3 +1,13 @@
-steps : 
-  - label: ":computer: Dire Bonjour"
-    command: "echo 'Salut, c'est moi momo !'"
+steps :
+  - label: ":seedling: Démarrage"
+    key: start
+    command: echo "Etape de démarrage"
+
+  - label: ":gear: Traitement"
+    key: process
+    depends_on: start
+    commmand: echo "Etape de traitement"
+
+  - label: ":checkered_flag: Final"
+    depends_on: process
+    command: echo "Étape finale !"
